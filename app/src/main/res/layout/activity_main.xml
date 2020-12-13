@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="102dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:text="Create New"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/listview1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSALARY"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="102dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="4dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:text="Delete"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/listview1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSALARY"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="102dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="4dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:text="Update"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/listview1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSALARY"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnClickArray"
+        android:layout_width="236dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:text="Click to display Array"
+        app:layout_constraintBottom_toTopOf="@+id/editFIRSTNAME"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="425dp"
+        android:layout_height="359dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.0"
+        android:listSelector="@android:color/holo_blue_dark"/>
+
+    <EditText
+        android:id="@+id/editFIRSTNAME"
+        android:layout_width="234dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="107dp"
+        android:adjustViewBounds="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scaleType="centerInside"
+        android:text="FIRST NAME"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClickArray" />
+
+    <EditText
+        android:id="@+id/editLASTNAME"
+        android:layout_width="234dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="107dp"
+        android:adjustViewBounds="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scaleType="fitCenter"
+        android:text="LAST NAME"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFIRSTNAME" />
+
+    <EditText
+        android:id="@+id/editGENDER"
+        android:layout_width="234dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="107dp"
+        android:adjustViewBounds="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scaleType="fitCenter"
+        android:text="GENDER"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLASTNAME" />
+
+    <EditText
+        android:id="@+id/editSALARY"
+        android:layout_width="234dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="107dp"
+        android:adjustViewBounds="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scaleType="fitCenter"
+        android:text="SALARY"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editGENDER" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="429dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClick" />
+
+    <EditText
+        android:id="@+id/editTextIDEdit"
+        android:layout_width="243dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="9dp"
+        android:adjustViewBounds="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scaleType="fitCenter"
+        android:text="Enter ID for Update or Delete"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSALARY" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
